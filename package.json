@@ -1,0 +1,16 @@
+{
+  "name": "test-tecnico-komax",
+  "version": "1.0.0",
+  "description": "Test tecnico para la empresa Komax",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "Test",
+    "tecnico",
+    "ecommerce"
+  ],
+  "author": "Joaquin Di cio",
+  "license": "ISC"
+}

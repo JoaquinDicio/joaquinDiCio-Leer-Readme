@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- My Js -->
+    <script src="./js/main.js"></script>
+    <!-- FontAwesome Script -->
+    <script src="https://kit.fontawesome.com/759a8eedd2.js" crossorigin="anonymous"></script>
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <title>Stoked | Home</title>
+</head>
+<body onload="main()">
+    <header>
+        <div class="d-flex justify-content-between align-items-center pre-navbar">
+            <div class="pre-navbar-info d-flex align-items-center">
+                <p>Asesoramiento, preguntas tecnicas y mas @stokedchile</p>
+                <i class="header-icon fa-brands fa-instagram"></i>
+            </div>
+            <div class="d-flex justify-content-center d-none-md">
+                <i class="pre-navbar-icon fa-regular fa-user"></i>
+                <i class="pre-navbar-icon fa-solid fa-cart-shopping"></i>
+                <i class="pre-navbar-icon fa-solid fa-truck"></i>
+                <i class="pre-navbar-icon fa-solid fa-store"></i>
+            </div>
+        </div>
+        <div class="navbar w-100 d-flex align-items-center justify-content-between">
+            <div class="logo"></div>
+            <div class="d-none d-block-md header-icons-responsive">
+                <i class="pre-navbar-icon fa-regular fa-user"></i>
+                <i class="pre-navbar-icon fa-solid fa-cart-shopping"></i>
+                <i id='menuBtn' class="pre-navbar-icon fa-solid fa-bars"></i>
+            </div>
+            <nav class="navbar-nav d-none-md">
+                <ul class="d-flex justify-content-around">
+                    <li class="selected nav-item unstyled">Trajes de agua</li>
+                    <li class="nav-item unstyled">Hombre</li>
+                    <li class="nav-item unstyled">Mujer</li>
+                    <li class="nav-item unstyled">Niños</li>
+                    <li class="nav-item unstyled">Accesorios</li>
+                    <li class="nav-item unstyled">Equipamientos</li>
+                    <li class="nav-item unstyled">Sale</li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <div class="search w-100">
+                    <i class="search-icon fa-solid fa-magnifying-glass"></i>
+                    <input placeholder="BUSCAR" type="text" class="search-input">
+                </div>
+            </div>
+            <div id="menu" class="d-flex responsive-menu-container w-100 d-none">
+                <div class="responsive-menu">
+                    <div class="d-flex justify-content-around">
+                        <div class="logo"></div>
+                        <i id="closeBtn" class="closeBtn fa-solid fa-xmark"></i>
+                    </div>
+                    <nav>
+                        <ul class="d-flex flex-column">
+                            <li class="w-100 selected nav-item-responsive unstyled">Trajes de agua</li>
+                            <li class="w-100 nav-item-responsive unstyled">Hombre</li>
+                            <li class="w-100 nav-item-responsive unstyled">Mujer</li>
+                            <li class="w-100 nav-item-responsive unstyled">Niños</li>
+                            <li class="w-100 nav-item-responsive unstyled">Accesorios</li>
+                            <li class="w-100 nav-item-responsive unstyled">Equipamientos</li>
+                            <li class="w-100 nav-item-responsive unstyled">Sale</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="free-shipping">
+            <p class="text-white text-center w-100">ENVÍO GRATIS POR COMPRAS SOBRE $50.000</p>
+        </div>
+    </header>
+    <body></body>
+    <footer></footer>
+</body>
+</html>
