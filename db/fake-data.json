@@ -1,0 +1,70 @@
+{
+    "storeName": "Fashion Avenue",
+    "clothes": [
+      {
+        "name": "Women's Little Black Dress",
+        "price": 49.99,
+        "imageUrl": "https://fashionavenue.com/images/lbd.jpg",
+        "category": "Dresses"
+      },
+      {
+        "name": "Men's Blue Jeans",
+        "price": 34.99,
+        "imageUrl": "https://fashionavenue.com/images/jeans.jpg",
+        "category": "Pants"
+      },
+      {
+        "name": "Girl's Pink Sundress",
+        "price": 24.99,
+        "imageUrl": "https://fashionavenue.com/images/sundress.jpg",
+        "category": "Dresses"
+      },
+      {
+        "name": "Boy's Camo Hoodie",
+        "price": 39.99,
+        "imageUrl": "https://fashionavenue.com/images/hoodie.jpg",
+        "category": "Hoodies"
+      },
+      {
+        "name": "Women's White T-Shirt",
+        "price": 14.99,
+        "imageUrl": "https://fashionavenue.com/images/tshirt-white.jpg",
+        "category": "T-Shirts"
+      },
+      {
+        "name": "Men's Black Polo",
+        "price": 29.99,
+        "imageUrl": "https://fashionavenue.com/images/polo-black.jpg",
+        "category": "Polos"
+      },
+      {
+        "name": "Women's Red High Heels",
+        "price": 59.99,
+        "imageUrl": "https://fashionavenue.com/images/heels-red.jpg",
+        "category": "Shoes"
+      },
+      {
+        "name": "Men's Brown Leather Shoes",
+        "price": 89.99,
+        "imageUrl": "https://fashionavenue.com/images/shoes-brown.jpg",
+        "category": "Shoes"
+      },
+      {
+        "name": "Girl's Purple Sweater",
+        "price": 19.99,
+        "imageUrl": "https://fashionavenue.com/images/sweater-purple.jpg",
+        "category": "Sweaters"
+      },
+      {
+        "name": "Boy's Yellow Raincoat",
+        "price": 39.99,
+        "imageUrl": "https://fashionavenue.com/images/raincoat-yellow.jpg",
+        "category": "Outerwear"
+      }
+    ]
+  }
+  
+  
+  
+  
+  
