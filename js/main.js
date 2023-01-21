@@ -1,3 +1,8 @@
+window.onload = async function() {
+    await main();
+};
+
+
 async function main() {
     setMenu();
     await setProductSlider(); //this needs to be await, this way OwlPlugin can set its properties correctly

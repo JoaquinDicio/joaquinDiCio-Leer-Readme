@@ -4,15 +4,16 @@ function setOwlPlugin(){
         loop:true,
         margin:10,
         nav:false,
+        dots:true,
         responsive:{
             0:{
                 items:1
             },
             600:{
-                items:2
+                items:3
             },
             1000:{
-                items:4
+                items:5
             }
         }
     })
@@ -20,7 +21,7 @@ function setOwlPlugin(){
         loop:true,
         margin:10,
         nav:false,
-        dots:true,
+        dots:false,
         responsive:{
             0:{
                 items:1
@@ -40,7 +41,7 @@ function setOwlPlugin(){
         margin:10,
         nav:true,
         dots:false,
-        navContainer:'.nav-container-products',
+        navContainer:'.owl-carousel-products',
         responsive:{
             0:{
                 items:1

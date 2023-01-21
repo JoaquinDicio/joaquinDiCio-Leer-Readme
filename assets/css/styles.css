@@ -117,6 +117,55 @@ div.responsive-menu-container i.closeBtn{
     margin-top: 10px;
     color: #6F6C6C;
 }
+/* ============= BODY ============= */
+
+/* CAROUSEL */
+.owl-carousel-1,.owl-carousel-2{
+    overflow: hidden;
+}
+
+/* CAROUSEL PRODUCT */
+div.owl-carousel-products{
+    position: relative;
+}
+button.owl-prev, button.owl-next{
+    height: 290px;
+    padding: 20px;
+    background-color: #ffff;
+    border: none;
+    color: #6F6C6C;
+    font-size: 2em;
+    position: absolute;
+    bottom: 0;
+    z-index: +1;
+}
+button.owl-prev{
+    left:0;
+    box-shadow: 15px 0px 15px 0px rgba(0, 0, 0, 0.200);
+}
+button.owl-next{
+    right:0;
+    box-shadow: -15px 0px 15px 0px rgba(0, 0, 0, 0.200);
+}
+.owl-carousel-1 div.item{
+    height: 500px;
+    background-color: red;
+}
+.owl-carousel-2 div.item{
+    height: 380px;
+    min-width: 450px;
+    margin: 0;
+    background-color: blue;
+}
+
+/* CAROUSEL PRODUCTS BUTTONS */
+div.product-card{
+    height: 290px;
+    border: 1px solid #6F6C6C;
+    cursor: pointer;
+}
+
+
 
 /*============= FOOTER ============= */
 /* footer-columns */
@@ -272,43 +321,4 @@ form input{
 }
 
 
-/* CAROUSEL */
-.owl-carousel-1,.owl-carousel-2{
-    overflow: hidden;
-}
-div.carousel-container-products{
-    position: relative;
-}
-div.nav-container-products{
-    position: absolute;
-    bottom: 0;
-}
-div.nav-container-products button{
-    height: 290px;
-    padding: 20px;
-    color: #ffff;
-    border: none;
-    color: #6F6C6C;
-    font-size: 2em;
-}
-div.nav-container-products button:first-of-type{
-    box-shadow: 15px 0px 15px 0px rgba(0, 0, 0, 0.200);
-}
-div.nav-container-products button:last-of-type{
-    box-shadow: -15px 0px 15px 0px rgba(0, 0, 0, 0.200);
-}
-.owl-carousel-1 div.item{
-    height: 500px;
-    background-color: red;
-}
-.owl-carousel-2 div.item{
-    height: 380px;
-    min-width: 450px;
-    margin: 0;
-    background-color: blue;
-}
-div.product-card{
-    height: 290px;
-    border: 1px solid #6F6C6C;
-    cursor: pointer;
-}
+
