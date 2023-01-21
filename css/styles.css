@@ -125,10 +125,15 @@ footer{
     padding: 16px 78px 50px 78px;
     background-color:#EEEE;
 }
-
+div.footer-content{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: auto auto auto auto;
+}
 .footer-column{
     max-width: 320px;
     padding: 0 10px;
+    grid-column: auto ;
     font-size: 12px;
 }
 div.footer-column div{
@@ -152,8 +157,7 @@ div.footer-column h5{
 }
 /* formulario */
 .footer-column:nth-of-type(1){
-    width:100%;
-    max-width:500px;
+    max-width: 500px;
 }
 .footer-column form p, .footer-column form input, .footer-column form label{
     margin: 5px 0;
@@ -203,16 +207,12 @@ form input{
     footer{
         padding: 32px 50px;
     }
-    div.footer-content{
-        flex-wrap: wrap;
-    }
     .footer-column:nth-of-type(1){
-        width:100%;
         max-width: none;
         padding-bottom: 60px;
+        grid-column: span 4;
     }
     .footer-column{
-        width:33%;
         padding-bottom: 20px;
     }
     footer form input{
@@ -233,17 +233,21 @@ form input{
         padding: 0;
         background-color: #ffff;
     }
+
     .footer-column:nth-of-type(1){
         background-color: #EEEE;
+        grid-column: span 4;
     }
     .footer-column{
-        padding: 1.8em 3.5em;
+        width: 100%;
         max-width: none;
-        width:100%;
+        grid-column: span 2;
+        padding: 1.8em 3.5em;
     }
     .footer-column:last-of-type {
         text-align: center;
-        justify-content: center;
+        max-width: none;
+        grid-column: 2/4;
         height: 150px;
     }
     .footer-column:last-of-type div{
@@ -253,7 +257,11 @@ form input{
         margin-bottom: 30px;
     }
 }
-
+@media (max-width:425px){
+    .footer-column{
+        grid-column: span 4;
+    }
+}
 /* ANIMATIONS */
 @keyframes open-menu{
     from{
