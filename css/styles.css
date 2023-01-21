@@ -7,7 +7,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* HEADER */
+/*============= HEADER ============= */
 /* pre-navbar */
 header{
     width: 100%;
@@ -58,7 +58,7 @@ nav li.nav-item.selected, nav li.nav-item:hover ,li.nav-item-responsive:hover{
 
 /* search input */
 div.search{
-    min-width: 240px;
+    min-width: 233px;
     border-radius: 5px;
     border: 1px solid #C2C2C2;
     padding: 0 5px;
@@ -100,13 +100,6 @@ div.responsive-menu{
     background-color: #ffff;
     animation: open-menu .5s;
 }
-@keyframes open-menu{
-    from{
-        transform: translate(100vw);
-    }to{
-        transform: translate(0);
-    }
-}
 
 div.responsive-menu div.logo{
     margin-left: 30px;
@@ -125,24 +118,43 @@ div.responsive-menu-container i.closeBtn{
     color: #6F6C6C;
 }
 
-/* ===== MEDIA QUERIES ===== */
-@media (max-width:768px){
-    div.pre-navbar{
-        border: none;
-    }
-    div.pre-navbar-info{
-        width: 100%;
-        justify-content: flex-end;
-    }
+/*============= FOOTER ============= */
+/* footer-columns */
+footer{
+    min-height: 214px;
+    padding: 16px 78px 50px 78px;
+    background-color:#EEEE;
+}
+div.footer-content{
+    flex-wrap: wrap;
+}
+.footer-column:nth-of-type(1){
+    width:30%;
+}
+.footer-column{
+    width: 23%;
+    padding: 0 10px;
+    font-size: 12px;
+}
+div.footer-column div{
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+div.footer-column div a{
+    color: #6F6C6C;
+    width: 50%;
+    padding: 2px;
 }
 
 
+
+
+/* ===== MEDIA QUERIES ===== */
+
 @media (max-width:1024px) {
+    /* NAVBAR */
     div.logo{
         width: 125px;
-    }
-    div.navbar{
-        padding: 15px 10px 35px 10px;
     }
     div.search-bar{
         margin-top: 15px;
@@ -155,5 +167,46 @@ div.responsive-menu-container i.closeBtn{
     div.header-icons-responsive{
         margin-right: 15px;
     }
+    /* FOOTER */
+    footer{
+        padding: 32px 50px;
+    }
+    .footer-column:nth-of-type(1){
+        width:100%;
+        margin: 0 30px 20px 0px;
+    }
+    .footer-column{
+        width:33%;
+        min-width:280px;
+        margin-bottom: 20px;
+    }
 }
 
+@media (max-width:768px){
+    div.pre-navbar{
+        border: none;
+    }
+    div.pre-navbar-info{
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .footer-column{
+        width:100%;
+    }
+    .footer-column:last-of-type {
+        text-align: center;
+        justify-content: center;
+    }
+    .footer-column:last-of-type div{
+        justify-content: space-evenly;
+    }
+}
+
+/* ANIMATIONS */
+@keyframes open-menu{
+    from{
+        transform: translate(100vw);
+    }to{
+        transform: translate(0);
+    }
+}
