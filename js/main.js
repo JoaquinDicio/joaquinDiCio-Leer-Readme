@@ -1,11 +1,15 @@
+import ProductSlider from "../components/ProductSlider.js";
+import getData from "../utils/getData.js";
+import SearchModal from "../components/SearchModal.js";
+
 window.onload = async function() {
     await main();
 };
 
-
 async function main() {
     setMenu();
-    await setProductSlider(); //this needs to be await, this way OwlPlugin can set its properties correctly
+    setSearchBar();
+    await renderProductSlider(); //this needs to be async, this way OwlPlugin can set its properties correctly
     setOwlPlugin();
 }
 
@@ -21,36 +25,25 @@ function menuHandleClick() {
     $menu.classList.toggle('d-flex-md')
 }
 
-//body construction
-async function setProductSlider() {
-    const { clothes } = await getData('../db/fake-data.json')
-    for (const product of clothes) {
-        new ProductCard(product, 'container-products').create()
-    }
+async function renderProductSlider(){
+    const slider = await ProductSlider({data:await getData('../db/fake-data.json')});
+    const main = document.querySelector('main')
+    main.appendChild(slider)
 }
 
-//utilities
-async function getData(url) {
-    const res = await fetch(url);
-    return await res.json();
+function setSearchBar(){
+    const input = document.getElementById('search-input')
+    input.addEventListener('click',(e)=>renderSearchModal(e.target.value))
+    input.addEventListener('input',(e)=>updateSearchModal(e.target.value))
 }
 
-//===== COMPONENTS ======//
-class ProductCard {
-
-    constructor(product, containerId) {
-        this.product = product;
-        this.container = document.getElementById(containerId);
-    }
-    create() {
-        this.container.innerHTML += `
-            <div class="product-card">
-                <div style="background-image:url(${this.product.imageUrl});" class="product-img">
-                </div>
-                <p>${this.product.name}</p>
-                <p>${this.product.price}</p>
-            </div>
-        `
-    }
+async function renderSearchModal(searchValue){
+    const container = document.querySelector('.active-search')
+    container.innerHTML = await SearchModal({searchValue})
+    container.classList.toggle('d-none')
+}
+async function updateSearchModal(searchValue){
+    const container = document.querySelector('.active-search')
+    container.innerHTML = await SearchModal({searchValue})
 }
 

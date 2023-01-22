@@ -159,10 +159,13 @@ button.owl-next{
 }
 
 /* CAROUSEL PRODUCTS BUTTONS */
-div.product-card{
+.owl-carousel div.product-card{
     height: 290px;
     border: 1px solid #6F6C6C;
     cursor: pointer;
+}
+div.product-card{
+    height: 100px;
 }
 
 
@@ -320,5 +323,30 @@ form input{
     }
 }
 
+.active-search{
+    position: absolute;
+    padding: 30px;
+    display: grid;
+    background-color: #ffff;
+    grid-template-columns: 1fr 3fr;
+    height: 420px;
+    width:1050px;
+    top: 150px;
+    right: 40px;
+    z-index: 100;
+    border-bottom: 5px solid black;
+}
+div.search-info{
+    height: 50%;
+    margin-right: 50px;
+    border-bottom: 1px solid black;
+}
+div.search-info:last-of-type{
+    padding-top: 20px;
+    border-bottom: none;
+}
+div.results-info{
+    border-left: 1px solid black;
+}
 
 
