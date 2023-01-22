@@ -12,8 +12,18 @@ Esta es mi entrega de la prueba tecnica, les comento un poco como la hice y los 
 
 - Incluí el MENU RESPONSIVE con una pequeña animación de por medio.
 
+
+COMO CORRER EL PROYECTO:
+
+- El proyecto debe correr dentro de un entorno de servidor, ya que sino los modulos de ES6 no funcionan por cuestiones de JavaScript. Por suerte basta con 
+  utilizar la extension de live-server. Esto se podria haber evitado utilizando webpack, pero no quise agregar mas complejidad al proyecto.
+
+
 NOTA: No se si estaban esperando una Aplicación de JS o mas bien un simple maquetado HTML / CSS. Pero lo hice de esta forma porque en la segunda página
       del mockup de figma se mostraba la barra de búsqueda activa. Y como es un componente dinámico, directamente base toda la aplicación en componentes.
       Posteriormente me enteré que esa parte no entraba en el challenge, pero ya la había hecho. Espero que si no suma, al menos no reste. 
 
+
 Eso es todo! les agradezco por leer y por darme la oportunidad. 
+
+Saludos!
