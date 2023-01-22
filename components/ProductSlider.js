@@ -1,15 +1,15 @@
 import ProductCard from "./ProductCard.js"
 
 export default async function ProductSlider(props) {
-    //create slider
-    const slider = document.createElement('div') 
-    slider.id='container-products'
-    slider.className = 'owl-carousel owl-carousel-products  owl-theme'
-    
+    let productCards = ''
     //append products from data
     props.data.clothes.forEach(item => {
-        slider.appendChild(new ProductCard(item))
+        productCards+=ProductCard({item});
     });
-
-    return slider
+    //create slider
+    return (`
+    <div id="container-products" class="owl-carousel owl-carousel-products owl-theme">
+      ${productCards}
+    </div>
+    `)
 }

@@ -28,7 +28,7 @@ function menuHandleClick() {
 async function renderProductSlider(){
     const slider = await ProductSlider({data:await getData('../db/fake-data.json')});
     const main = document.querySelector('main')
-    main.appendChild(slider)
+    main.innerHTML+=(slider)
 }
 
 function setSearchBar(){

@@ -1,25 +1,39 @@
 import getData from "../utils/getData.js"
+import ProductCard from "./ProductCard.js";
 
 export default async function SearchModal(props) {
+    const turnBold = (name) => {
+        const regex = new RegExp(props.searchValue, 'gi');
+        const highlightedWord = props.searchValue.charAt(0).toUpperCase() + props.searchValue.substr(1);
+        return name.replace(regex,`<b>${highlightedWord}</b>`);
+    }
     //getting data
     const {clothes} = await getData('../db/fake-data.json')
     //finding coincidences
     const filteredClothes = clothes.filter((item) => item.name.toLowerCase().includes(props.searchValue.toLowerCase()));
     let clothesHTML =''
+    filteredClothes.forEach((result)=>clothesHTML+=ProductCard({item:result}))
+    //getting top four coincidences
+    let mostSearch = ''
+    filteredClothes.slice(0,4).forEach((result)=>mostSearch+=`<p class="popular-search">${turnBold(result.name, props.searchValue)}</p>`)
     //returning component
     return (
         `
-        <div class="d-flex flex-column">
-            <div class="search-info">
+        <div class="d-flex flex-column search-results-info">
+            <div class="search-results-column">
                 <h5>Busquedas populares</h5>
-                ${props.searchValue}
+                ${mostSearch}
             </div>
-            <div class="search-info">
+            <div class="search-results-column">
                 <h5>Busquedas recientes</h5>
             </div>
         </div>  
-        <div class="results-info d-flex justify-content-center align-items-center">
-            NO RESOULTS FOUND
+        <div class='search-results'>
+            <h5>Productos</h5>
+            <div class="search-results-products d-flex">
+                ${clothesHTML}
+            </div>
+            <h5 class="show-all">Ver todos (${filteredClothes.length})</h5>
         </div>
         `
     )
