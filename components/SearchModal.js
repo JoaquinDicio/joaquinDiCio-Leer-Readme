@@ -35,7 +35,7 @@ export default async function SearchModal(props) {
         </div>  
         <div class='search-results'>
             <h5>Productos</h5>
-            <div class="search-results-products d-flex">
+            <div class="search-results-products d-flex justify-content-center">
                 ${clothesHTML}
             </div>
             <h5 class="show-all">Ver todos (${filteredClothes.length})</h5>

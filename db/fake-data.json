@@ -4,62 +4,75 @@
       {
         "name": "Womens Little Black Dress",
         "price": 49.99,
-        "imageUrl": "https://fashionavenue.com/images/lbd.jpg",
-        "category": "Dresses"
+        "imageUrl": "https://www.stoked.cl/media/catalog/product/p/o/ponsts22-am01_st004_1_1.jpg",
+        "category": "Dresses",
+        "categoryImg":"https://d3ugyf2ht6aenh.cloudfront.net/stores/188/770/themes/style/1-img-1835205291-1667312376-9e632a7e4507707d63d66c33fc356e9f1667312377-480-0.webp?1184456549",
+        "inOffer":true
       },
       {
         "name": "Mens Blue Jeans",
         "price": 34.99,
-        "imageUrl": "https://fashionavenue.com/images/jeans.jpg",
-        "category": "Pants"
+        "imageUrl": "https://www.stoked.cl/media/catalog/product/s/a/sants21-a02_st004_1_1.jpg",
+        "category": "Pants",
+        "categoryImg":"https://d3ugyf2ht6aenh.cloudfront.net/stores/188/770/themes/style/1-img-2081966589-1667312466-b38ade89239313f993f97bb6b25af9241667312466-480-0.webp?1184456549"
       },
       {
         "name": "Girls Pink Sundress",
         "price": 24.99,
-        "imageUrl": "https://fashionavenue.com/images/sundress.jpg",
-        "category": "Dresses"
+        "imageUrl": "https://www.stoked.cl/media/catalog/product/s/w/swimsts21-f01_st060_1_6.jpg",
+        "category": "Dresses",
+        "categoryImg":"https://d3ugyf2ht6aenh.cloudfront.net/stores/188/770/themes/style/1-img-1455769189-1667312346-ddceb4accb4a805aa5dae2aa5880eb5e1667312347-480-0.webp?1184456549",
+        "inOffer":true
       },
       {
         "name": "Boys Camo Hoodie",
         "price": 39.99,
-        "imageUrl": "https://fashionavenue.com/images/hoodie.jpg",
-        "category": "Hoodies"
+        "imageUrl": "https://www.stoked.cl/media/catalog/product/cache/1fc00a2a8ba9a3d69f0cf9861ad15b4e/j/a/jasts22-m03_st004_1_1.jpg",
+        "category": "Hoodies",
+        "categoryImg":"https://d3ugyf2ht6aenh.cloudfront.net/stores/188/770/themes/style/1-img-1455769189-1667312346-ddceb4accb4a805aa5dae2aa5880eb5e1667312347-480-0.webp?1184456549"
       },
       {
         "name": "Womens White T-Shirt",
         "price": 14.99,
-        "imageUrl": "https://fashionavenue.com/images/tshirt-white.jpg",
-        "category": "T-Shirts"
+        "imageUrl": "https://www.stoked.cl/media/catalog/product/cache/1fc00a2a8ba9a3d69f0cf9861ad15b4e/p/l/plsts22-w05_st082_1_1.jpg",
+        "category": "T-Shirts",
+        "categoryImg":"https://d3ugyf2ht6aenh.cloudfront.net/stores/188/770/themes/style/1-img-2081966589-1667312466-b38ade89239313f993f97bb6b25af9241667312466-480-0.webp?1184456549",
+        "inOffer":true
       },
       {
         "name": "Mens Black Polo",
         "price": 29.99,
-        "imageUrl": "https://fashionavenue.com/images/polo-black.jpg",
-        "category": "Polos"
+        "imageUrl": "https://www.stoked.cl/media/catalog/product/cache/1fc00a2a8ba9a3d69f0cf9861ad15b4e/j/a/jasts22-m03_st004_1_1.jpg",
+        "category": "Polos",
+        "categoryImg":"https://d3ugyf2ht6aenh.cloudfront.net/stores/188/770/themes/style/1-img-1455769189-1667312346-ddceb4accb4a805aa5dae2aa5880eb5e1667312347-480-0.webp?1184456549"
       },
       {
         "name": "Womens Red High Heels",
         "price": 59.99,
-        "imageUrl": "https://fashionavenue.com/images/heels-red.jpg",
-        "category": "Shoes"
+        "imageUrl": "https://www.stoked.cl/media/catalog/product/cache/1fc00a2a8ba9a3d69f0cf9861ad15b4e/p/l/plsts22-w06_st009_1_1.jpg",
+        "category": "Shoes",
+        "categoryImg":"https://d3ugyf2ht6aenh.cloudfront.net/stores/188/770/themes/style/1-img-1835205291-1667312376-9e632a7e4507707d63d66c33fc356e9f1667312377-480-0.webp?1184456549"
       },
       {
         "name": "Mens Brown Leather Shoes",
         "price": 89.99,
-        "imageUrl": "https://fashionavenue.com/images/shoes-brown.jpg",
-        "category": "Shoes"
-      },
+        "imageUrl": "https://www.stoked.cl/media/catalog/product/cache/1fc00a2a8ba9a3d69f0cf9861ad15b4e/s/a/sants21-a02_st002_1.jpg",
+        "category": "Shoes",
+        "categoryImg":"https://www.stoked.cl/media/STOKED/home/caluga-2_ARTE_1.png",
+        "inOffer":true},
       {
         "name": "Girls Purple Sweater",
         "price": 19.99,
-        "imageUrl": "https://fashionavenue.com/images/sweater-purple.jpg",
-        "category": "Sweaters"
+        "imageUrl": "https://www.stoked.cl/media/catalog/product/cache/1fc00a2a8ba9a3d69f0cf9861ad15b4e/p/l/plsts22-w04_st089_1_1.jpg",
+        "category": "Sweaters",
+        "categoryImg":"https://d3ugyf2ht6aenh.cloudfront.net/stores/188/770/themes/style/1-img-1455769189-1667312346-ddceb4accb4a805aa5dae2aa5880eb5e1667312347-480-0.webp?1184456549"
       },
       {
         "name": "Boys Yellow Raincoat",
         "price": 39.99,
-        "imageUrl": "https://fashionavenue.com/images/raincoat-yellow.jpg",
-        "category": "Outerwear"
+        "imageUrl": "https://www.stoked.cl/media/catalog/product/cache/1fc00a2a8ba9a3d69f0cf9861ad15b4e/p/l/plsts22-m02_st208_1_1.jpg",
+        "category": "Outerwear",
+        "categoryImg":"https://d3ugyf2ht6aenh.cloudfront.net/stores/188/770/themes/style/1-img-1835205291-1667312376-9e632a7e4507707d63d66c33fc356e9f1667312377-480-0.webp?1184456549"
       }
     ]
   }

@@ -5,49 +5,43 @@ export default function setOwlPlugin(){
         margin:10,
         nav:false,
         dots:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:3
-            },
-            1000:{
-                items:5
-            }
-        }
+        items:1
     })
     $('.owl-carousel-2').owlCarousel({
-        loop:true,
-        margin:10,
+        margin:30,
         nav:false,
-        dots:false,
+        loop:true,
         responsive:{
             0:{
-                items:1
+                items:2,
+                center:true,
+                margin:10,
+                dots:true,
             },
-            600:{
-                items:2
+            768:{
+                items:2,
+                center:true,
+                dots:false,
             },
             1000:{
-                items:3
+                items:3,
             }
         }
         
     })
     $('.owl-carousel-products').owlCarousel({
         loop:true,
-        stagePadding:50,
         margin:10,
         nav:true,
+        center:true,
         dots:false,
         navContainer:'.owl-carousel-products',
         responsive:{
             0:{
-                items:1
+                items:2
             },
             600:{
-                items:3
+                items:4
             },
             1000:{
                 items:6
