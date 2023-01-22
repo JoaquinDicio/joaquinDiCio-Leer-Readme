@@ -1,6 +1,9 @@
 .d-flex{
     display: flex;
 }
+.pointer{
+    cursor: pointer;
+}
 .w-100{
     width: 100%;
 }

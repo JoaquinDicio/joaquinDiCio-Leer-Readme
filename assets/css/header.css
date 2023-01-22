@@ -22,7 +22,6 @@ i.pre-navbar-icon{
 i.pre-navbar-icon:hover{
     color: #78020A;
     transition: .3s;
-    cursor: pointer;
 }
 /* navbar */
 div.navbar{

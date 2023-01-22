@@ -5,7 +5,6 @@ div.category-list{
 }
 div.category-card{
     overflow: hidden;
-    cursor: pointer;
     flex: 1;
     margin:5px;
     border-radius: 5px;

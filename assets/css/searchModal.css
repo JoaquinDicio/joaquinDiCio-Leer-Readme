@@ -49,8 +49,6 @@ p.popular-search{
     margin-top: 10px;
     font-size: 14px;
 }
-
-div.search-results h5.show-all{
-    text-align: center;
-    cursor: pointer;
+p.popular-search:hover{
+    text-decoration: underline;
 }

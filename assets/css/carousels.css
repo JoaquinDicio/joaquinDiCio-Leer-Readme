@@ -17,6 +17,7 @@ div.owl-carousel-products{
 button.owl-prev, button.owl-next{
     height: 280px;
     padding: 20px;
+    cursor: pointer;
     background-color: #ffff;
     border: none;
     color: #6F6C6C;
@@ -35,7 +36,6 @@ button.owl-next{
 }
 
 div.product-card-image{
-    width: 100%;
     height: 80%;
     background-size: cover;
     background-position: center;
@@ -44,7 +44,6 @@ div.product-card-image{
 div.product-card{
     width: 220px;
     height: 280px;
-    cursor: pointer;
 }
 p.product-card-price{
     font-size: 1.2em;

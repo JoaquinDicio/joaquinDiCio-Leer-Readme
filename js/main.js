@@ -1,9 +1,7 @@
-import ProductSlider from "../components/ProductSlider.js";
-import getData from "../utils/getData.js";
-import SearchModal from "../components/SearchModal.js";
 import setOwlPlugin from "./owl-plugin/config.js";
-import CommonSlider from "../components/CommonSlider.js";
-import CatgSelector from "../components/CatgSelector.js";
+import renderApp from "./renderApp.js";
+import { renderSearchModal } from "./renderApp.js";
+import { dismmountSearchModal, updateSearchModal} from "../components/SearchModal.js";
 
 window.onload = async function () {
     await main();
@@ -12,9 +10,7 @@ window.onload = async function () {
 async function main() {
     setMenu();
     setSearchBar();
-    renderBannerSliders();
-    await renderProductSlider(); //this needs to be async, this way OwlPlugin can set its properties correctly
-    await renderCategories(); 
+    await renderApp()
     setOwlPlugin();
 }
 
@@ -39,55 +35,5 @@ function setSearchBar() {
     input.addEventListener('input', (e) => updateSearchModal(e.target.value))
 }
 
-//COMPONENTS
-
-function renderBannerSliders(){
-    const sliderItems1 = [
-        'https://www.stoked.cl/media/weltpixel/owlcarouselslider/images/s/t/stoked_trajes_web.jpg',
-        'https://www.stoked.cl/media/weltpixel/owlcarouselslider/images/s/t/stoked_summer_sale_2023_web.jpg',
-        'https://www.stoked.cl/media/weltpixel/owlcarouselslider/images/s/t/stoked_trajes_de_ban_o-01.jpg',
-    ] //images url
-    const sliderItems2= [
-        'https://www.stoked.cl/media/wysiwyg/STOKED_SUMMER_SALE_2023-01_4.png',
-        'https://www.stoked.cl/media/wysiwyg/STOKED_SUMMER_SALE_2023-03_3.png',
-        'https://www.stoked.cl/media/wysiwyg/STOKED_SUMMER_SALE_2023-02_4.png',        
-    ] //images url
-    const container = document.querySelector('main')
-    container.innerHTML+= CommonSlider({sliderItems:sliderItems1,type:1})
-    container.innerHTML+= CommonSlider({sliderItems:sliderItems2,type:2})
-
-}
-
-async function renderCategories(){
-    const {clothes} = await getData('../db/fake-data.json')
-    const main = document.querySelector('main')
-    main.innerHTML += CatgSelector({clothes})
-}
-
-async function renderProductSlider() {
-    const slider = await ProductSlider({ data: await getData('../db/fake-data.json') });
-    const main = document.querySelector('main')
-    main.innerHTML += (slider)
-}
-
-async function renderSearchModal(searchValue) {
-    const container = document.querySelector('.active-search')
-    const close = document.getElementById('close-mark')
-    container.innerHTML = await SearchModal({ searchValue })
-    container.classList.remove('d-none')
-    close.classList.remove('d-none')
-}
-
-function dismmountSearchModal(){
-    const container = document.querySelector('.active-search')
-    const close = document.getElementById('close-mark')
-    container.classList.add('d-none')
-    close.classList.add('d-none')
-}
-
-async function updateSearchModal(searchValue) {
-    const container = document.querySelector('.active-search')
-    container.innerHTML = await SearchModal({ searchValue })
-}
 
 

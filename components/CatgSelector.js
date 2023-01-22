@@ -10,7 +10,7 @@ export default function CatgSelector( props ){
     //generating six cards
     let categoriesHTML = ''
     uniqueCategories.slice(0,6).forEach((category)=>categoriesHTML+=`
-        <div style="background-image:url(${category.img})" class="category-card"> 
+        <div style="background-image:url(${category.img})" class="category-card pointer"> 
             <div class="d-flex align-items-center card-opacity">
                 <p class="text-white text-center w-100 category-card-name">${category.name}</p>
             </div>
