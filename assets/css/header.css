@@ -1,0 +1,88 @@
+@import url('searchModal.css');
+@import url('responsiveMenu.css');
+/*============= HEADER ============= */
+/* pre-navbar */
+header{
+    width: 100%;
+}
+header p {
+    letter-spacing: 1px;
+    font-size: 10px;
+    margin-bottom: 1px;
+    margin-right: 5px;
+}
+div.pre-navbar{
+    padding: 30px 50px 10px 50px;
+    border-bottom: 1px solid #6F6C6C ;
+}
+i.pre-navbar-icon{
+    font-size: 25px;
+    margin: 0 10px;
+}
+i.pre-navbar-icon:hover{
+    color: #78020A;
+    transition: .3s;
+    cursor: pointer;
+}
+/* navbar */
+div.navbar{
+    max-width: 1600px;
+    min-height: 90px;
+    padding: 0 40px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+div.logo{
+    background-image:url('../img/logo.png');
+    height: 45px;
+    width: 135px;
+    background-position: center;
+    background-size: cover;
+}
+nav li.nav-item{
+    margin: 0px 20px;
+    font-size: 1.1em;
+}
+nav li.nav-item.selected, nav li.nav-item:hover ,li.nav-item-responsive:hover{
+    text-decoration: underline;
+    font-weight: 500;
+    cursor: pointer;
+}
+/* search */
+div.search{
+    min-width: 233px;
+    border-radius: 5px;
+    border: 1px solid #C2C2C2;
+    padding: 0 5px;
+}
+i.search-icon{
+    font-size: 1.1em;
+    color:#6F6C6C;
+}
+input.search-input{
+    width: 85%;
+    border: none;
+    padding: 4px 5px;
+    font-size: .9em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+input.search-input:focus-visible{
+    outline: none;
+}
+div#close-mark{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #6F6C6C;
+}
+div#close-mark i{
+    color: #ffff;
+}
+
+/* freeshipping */
+div.free-shipping{
+    background-color:#78020A;
+    padding: 5px 0;
+}

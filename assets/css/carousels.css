@@ -1,0 +1,70 @@
+/* CAROUSEL PRODUCT */
+
+.owl-carousel-products{
+    margin: 30px 0 60px 0;
+}
+
+.owl-carousel-2 div.item{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: auto 550 / 480;
+}
+
+div.owl-carousel-products{
+    position: relative;
+}
+button.owl-prev, button.owl-next{
+    height: 280px;
+    padding: 20px;
+    background-color: #ffff;
+    border: none;
+    color: #6F6C6C;
+    font-size: 2em;
+    position: absolute;
+    bottom: 0;
+    z-index: +1;
+}
+button.owl-prev{
+    left:0;
+    box-shadow: 15px 0px 15px 0px rgba(0, 0, 0, 0.200);
+}
+button.owl-next{
+    right:0;
+    box-shadow: -15px 0px 15px 0px rgba(0, 0, 0, 0.200);
+}
+
+div.product-card-image{
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+}
+
+div.product-card{
+    width: 220px;
+    height: 280px;
+    cursor: pointer;
+}
+p.product-card-price{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    margin: 2px;
+}
+
+/* CAROUSELs */
+.owl-carousel-1,.owl-carousel-2{
+    overflow: hidden;
+}
+
+.owl-carousel-1 div.item{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: auto 3120 / 1040;
+}
+.owl-carousel-2{
+    padding: 30px;
+    margin: 25px 0;
+}

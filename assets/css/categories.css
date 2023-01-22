@@ -1,0 +1,33 @@
+/*============= CATEGORIES ============= */
+div.category-list{
+    margin: 90px 30px 110px 30px;
+    flex-wrap: wrap;
+}
+div.category-card{
+    overflow: hidden;
+    cursor: pointer;
+    flex: 1;
+    margin:5px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    min-width: 185px;
+    min-height: 100px;
+    transition: .4s;
+}
+div.category-card:hover .card-opacity{
+    background-color:rgba(0, 0, 0, 0.650);
+}
+div.category-card:hover{
+    border-radius: 10px;
+}
+div.card-opacity{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.400);
+}
+
+p.category-card-name{
+    font-size: 1.3em;
+    font-weight: lighter;
+}
