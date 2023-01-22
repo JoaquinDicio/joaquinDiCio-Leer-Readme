@@ -8,25 +8,3 @@ export default function ProductCard(props) {
     </div>
   `)
 }
-
-// export default function ProductCard(props){
-//      // Create the card element
-//   const card = document.createElement("div");
-//   card.classList.add("product-card");
-
-//   const image = document.createElement('div')
-//   image.classList.add('product-card-image')
-//   image.style=`background-image:url(${props.imageUrl});`
-//   card.appendChild(image)
-//   // Add the product information
-//   const name = document.createElement("p");
-//   name.textContent = props.name;
-//   card.appendChild(name);
-
-//   const price = document.createElement("p");
-//   price.textContent = props.price
-//   card.appendChild(price);
-
-//   // Returns the card
-//   return card;
-// }

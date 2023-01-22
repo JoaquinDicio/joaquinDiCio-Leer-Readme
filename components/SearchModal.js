@@ -2,6 +2,7 @@ import getData from "../utils/getData.js"
 import ProductCard from "./ProductCard.js";
 
 export default async function SearchModal(props) {
+    //highlight coincidences
     const turnBold = (name) => {
         const regex = new RegExp(props.searchValue, 'gi');
         const highlightedWord = props.searchValue.charAt(0).toUpperCase() + props.searchValue.substr(1);
@@ -26,6 +27,10 @@ export default async function SearchModal(props) {
             </div>
             <div class="search-results-column">
                 <h5>Busquedas recientes</h5>
+                <p class="popular-search">Women's Little Black Dress</p>
+                <p class="popular-search">Men's Blue Jeans</p>
+                <p class="popular-search">Girl's Pink Sundress</p>
+                <p class="popular-search">Boy's Camo Hoodie</p>
             </div>
         </div>  
         <div class='search-results'>

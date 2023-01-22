@@ -1,62 +1,62 @@
 {
-    "storeName": "Fashion Avenue",
+    "storeName": "Nike",
     "clothes": [
       {
-        "name": "Women's Little Black Dress",
+        "name": "Womens Little Black Dress",
         "price": 49.99,
         "imageUrl": "https://fashionavenue.com/images/lbd.jpg",
         "category": "Dresses"
       },
       {
-        "name": "Men's Blue Jeans",
+        "name": "Mens Blue Jeans",
         "price": 34.99,
         "imageUrl": "https://fashionavenue.com/images/jeans.jpg",
         "category": "Pants"
       },
       {
-        "name": "Girl's Pink Sundress",
+        "name": "Girls Pink Sundress",
         "price": 24.99,
         "imageUrl": "https://fashionavenue.com/images/sundress.jpg",
         "category": "Dresses"
       },
       {
-        "name": "Boy's Camo Hoodie",
+        "name": "Boys Camo Hoodie",
         "price": 39.99,
         "imageUrl": "https://fashionavenue.com/images/hoodie.jpg",
         "category": "Hoodies"
       },
       {
-        "name": "Women's White T-Shirt",
+        "name": "Womens White T-Shirt",
         "price": 14.99,
         "imageUrl": "https://fashionavenue.com/images/tshirt-white.jpg",
         "category": "T-Shirts"
       },
       {
-        "name": "Men's Black Polo",
+        "name": "Mens Black Polo",
         "price": 29.99,
         "imageUrl": "https://fashionavenue.com/images/polo-black.jpg",
         "category": "Polos"
       },
       {
-        "name": "Women's Red High Heels",
+        "name": "Womens Red High Heels",
         "price": 59.99,
         "imageUrl": "https://fashionavenue.com/images/heels-red.jpg",
         "category": "Shoes"
       },
       {
-        "name": "Men's Brown Leather Shoes",
+        "name": "Mens Brown Leather Shoes",
         "price": 89.99,
         "imageUrl": "https://fashionavenue.com/images/shoes-brown.jpg",
         "category": "Shoes"
       },
       {
-        "name": "Girl's Purple Sweater",
+        "name": "Girls Purple Sweater",
         "price": 19.99,
         "imageUrl": "https://fashionavenue.com/images/sweater-purple.jpg",
         "category": "Sweaters"
       },
       {
-        "name": "Boy's Yellow Raincoat",
+        "name": "Boys Yellow Raincoat",
         "price": 39.99,
         "imageUrl": "https://fashionavenue.com/images/raincoat-yellow.jpg",
         "category": "Outerwear"

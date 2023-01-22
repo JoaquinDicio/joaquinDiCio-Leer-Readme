@@ -1,5 +1,6 @@
 /* import font OSWALD */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('utilities.css');
 
 *{
     font-family: 'Oswald';
@@ -68,6 +69,7 @@ i.search-icon{
     color:#6F6C6C;
 }
 input.search-input{
+    width: 85%;
     border: none;
     padding: 4px 5px;
     font-size: .9em;
@@ -77,7 +79,16 @@ input.search-input{
 input.search-input:focus-visible{
     outline: none;
 }
-
+div#close-mark{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #6F6C6C;
+}
+div#close-mark i{
+    color: #ffff;
+}
 /* freeshipping */
 div.free-shipping{
     background-color:#78020A;
@@ -250,11 +261,13 @@ form input{
     z-index: 100;
     border-bottom: 5px solid black;
 }
+
 div.search-results-column{
     height: 50%;
     margin-right: 50px;
     border-bottom: 1px solid black;
 }
+
 div.search-results-column:last-of-type{
     padding-top: 20px;
     border-bottom: none;
@@ -267,11 +280,13 @@ div.search-results-products{
     flex-wrap: wrap;
     height: 95%;
 }
+
 p.popular-search{
     font-weight: lighter;
     margin-top: 10px;
     font-size: 14px;
 }
+
 div.search-results h5.show-all{
     text-align: center;
     cursor: pointer;
